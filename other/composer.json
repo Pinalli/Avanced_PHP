@@ -1,0 +1,17 @@
+{
+    "name": "betop/other",
+    "autoload": {
+        "psr-4": {
+            "Betop\\Other\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alberto Rocha Pinalli",
+            "email": "betopinalli@gmail.com"
+        }
+    ],
+    "require": {
+        "betop/avanced_php": "^1.1"
+    }
+}
