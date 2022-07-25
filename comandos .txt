@@ -19,6 +19,9 @@ adjustment errors
 .\vendor\bin\phpcbf src/ --standard=Zend
 
 =====LINKS================
+
+http://br.phptherightway.com/
+
 https://phpunit.de/getting-started/phpunit-9.html
 
 
