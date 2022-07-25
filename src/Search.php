@@ -2,6 +2,8 @@
 
 namespace Betop\AvancedPhp;
 
+use Betop\AvancedPhp\ws\ViaCep;
+
 class Search
 {
     private $url = "https://viacep.com.br/ws/";
@@ -9,9 +11,20 @@ class Search
     public function getAddressFromZipCode(string $zipCode): array
     {
         $zipCode = preg_replace('/[^0-9]/', '', $zipCode);
+        return $this->getFromServer($zipCode);
+    }
 
-        $get = file_get_contents($this->url .  $zipCode . '/json/');
+    private function getFromServer(string $zipCode): array
+    {
+        $get = new ViaCep();
+        return $get->get($zipCode);
+    }
 
-            return(array)json_decode($get);
+    private function processData($data)
+    {
+        foreach ($data as $key => $value) {
+            $data[$key] = trim($value);
+        }
+        return $data;
     }
 }
