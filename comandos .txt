@@ -6,5 +6,8 @@ vendor/bin/phpunit --version
 
 vendor/bin/phpunit tests/ --color=always
 
+logs tests
+vendor/bin/phpunit tests/ --colors=always --testdox-text= report-tests.txt
+
 =====LINKS================
 https://phpunit.de/getting-started/phpunit-9.html
