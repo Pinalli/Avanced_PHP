@@ -6,10 +6,10 @@ vendor/bin/phpunit --version
 
 vendor/bin/phpunit tests/ --color=always
 
-*ogs tests
+* Logs tests
 vendor/bin/phpunit tests/ --colors=always --testdox-text= report-tests.txt
 
-*PSRs
+* PSRs
 composer  require --dev squizlabs/php_codesniffer 3.* 
 .\vendor\bin\phpcs --version 
 show errors 
@@ -18,12 +18,19 @@ adjustment errors
 .\vendor\bin\phpcbf src/ --standard=PSR12
 .\vendor\bin\phpcbf src/ --standard=Zend
 
-=====LINKS================
+=====LINKS==========================
 
 http://br.phptherightway.com/
 
 https://phpunit.de/getting-started/phpunit-9.html
 
-
 PSRs
 https://github.com/squizlabs/PHP_CodeSniffer
+
+* Micro framework
+
+https://laravel.com/
+
+https://lumen.laravel.com/docs/9.x
+https://www.slimframework.com/
+https://symfony.com/blog/the-end-of-silex
