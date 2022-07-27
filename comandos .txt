@@ -18,6 +18,15 @@ adjustment errors
 .\vendor\bin\phpcbf src/ --standard=PSR12
 .\vendor\bin\phpcbf src/ --standard=Zend
 
+*laravel
+composer create-project laravel/laravel registration-laravel 9
+ php artisan config:clear
+
+ *database
+php artisan make:controller User
+ php artisan make:controller Client/User
+php artisan serve
+
 =====LINKS==========================
 
 http://br.phptherightway.com/
